@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+body { font-family: verdana, arial, sans-serif; font-size: 12px; }
+#container { width: 1000px; font-size: 90%; margin: 0 auto; }
+
+/* Pembagian Kotak Utama */
+#header, #sidebar, #page, #footer { border: 1px dashed #0000ff; }
+#header, #sidebar, #footer { background-color: #99ccff; }
+#sidebar, #page, #footer { margin-top: 10px; }
+#header, #page { padding: 10px; }
+
+#header { height: 75px; }
+#sidebar { width: 160px; float: left; }
+#page { width: 830px; float: left; margin-left: 10px; overflow-x: auto; }
+#clear { clear: both; }
+#footer { text-align: center; }
+
+/* Tipografi Judul */
+#header h1, #sidebar h3, #page h2 { font-family: 'trebuchet ms', sans-serif; }
+#header h1 { margin: 0; color: #003399; }
+#sidebar h3, #page h2 { color: #993300; }
+#sidebar h3 { padding-left: 10px; margin-top: 10px; }
+
+/* Navigasi */
+#navmenu { margin: 0; padding: 0; list-style: none; }
+#navmenu li { margin-bottom: 5px; }
+#navmenu a { display: block; background-color: #003366; color: #eecc11; padding: 5px; text-decoration: none; cursor: pointer; }
+#navmenu a:hover, #navmenu a:focus { background-color: #333; color: #fff; }
+#navmenu a.selected { background-color: #386088; color: #fff; text-align: right; cursor: default; }
+
+/* Gambar & Tabel */
+#page img { max-width: 100%; height: auto; display: block; margin-top: 15px; }
+#page table { width: 100%; border-collapse: collapse; margin-top: 20px; table-layout: fixed; }
+#page th, #page td { border: 1px solid #0000ff; padding: 5px; word-break: break-word; }
+#page th { background-color: #003366; color: #eecc11; text-align: center; }
+#page td { background-color: #fff; color: #000; }
+
+/* Form Login di Sidebar */
+#login { margin-top: 15px; padding: 10px; border-top: 1px dashed #0000ff; font-weight: bold; color: #003399; }
+#login input[type="text"], #login input[type="password"] { display: block; width: 100%; margin: 4px 0 10px; padding: 5px; border: 1px solid #0000ff; font-size: 11px; }
+#login input[type="submit"] { background-color: #003366; color: #eecc11; border: 1px solid #002244; padding: 5px 14px; cursor: pointer; font-weight: bold; font-size: 11px; }
+#login input[type="submit"]:hover { background-color: #333; color: #fff; }
+#login p { margin: 0 0 8px; color: #003366; }
+#login a { color: #cc0000; font-weight: bold; text-decoration: none; }
+#login a:hover { text-decoration: underline; }

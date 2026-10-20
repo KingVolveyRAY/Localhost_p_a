@@ -1,0 +1,1 @@
+<img src="images/IMG_7596.jpg" width="400" height="400" alt="Sohibrid">
